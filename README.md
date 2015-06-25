@@ -4,6 +4,8 @@
 
 ## On va partir sur le mister cocktail du wagon. Et on va essayer de créer ces cocktails en plusieurs formulaires
 
+### Premiere étape la création des fichiers
+
 - rails new wicked -T --database=postgresql
 - rake db:create
 - git init
@@ -70,4 +72,26 @@ end
 ```
 
 rails g controller cocktails
+
+On met en place les gems pour bootstrap:
+```ruby
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'font-awesome-sass', '~> 4.2.0'
+gem 'simple_form'
+```
+Puis
+```
+$ bundle install
+$ rails generate simple_form:install --bootstrap
+```
+puis on va sur le repo github du wagon
+
+lewagon/rails-stylesheets
+
+Et on copie les codes ;-)
+
+pour la page index de Cocktail, on utilise le [tableau bootstrap](http://getbootstrap.com/css/#tables)
+
+
+
 
